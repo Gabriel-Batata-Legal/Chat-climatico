@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clima IA: um assistente para aprender sobre mudanças climáticas e cuidar do planeta.">
+  <meta name="theme-color" content="#0b6b50">
+  <title>Clima IA | Assistente climático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Clima IA - início">
+        <span class="brand-icon">🌍</span>
+        <span>Clima<span class="brand-highlight">IA</span></span>
+      </a>
+      <span class="status"><span class="status-dot"></span> Assistente online</span>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">TECNOLOGIA A FAVOR DO PLANETA</span>
+        <h1>Pequenas conversas.<br><span>Grandes mudanças.</span></h1>
+        <p>Descobre mais sobre o clima, a natureza e atitudes que ajudam a proteger o nosso planeta.</p>
+      </div>
+      <div class="earth-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="earth">🌎</div>
+        <span class="leaf leaf-one">🍃</span>
+        <span class="leaf leaf-two">🌱</span>
+      </div>
+    </section>
+
+    <section class="chat-card" aria-label="Conversa com a Clima IA">
+      <div class="chat-heading">
+        <div class="bot-avatar">🌿</div>
+        <div>
+          <h2>Conversa com a Clima IA</h2>
+          <p>Estou aqui para ajudar a cuidar do planeta.</p>
+        </div>
+        <button class="clear-button" id="clearChat" type="button" title="Limpar conversa">↻ <span>Limpar</span></button>
+      </div>
+
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="message bot-message">
+          <div class="message-avatar">🌍</div>
+          <div class="bubble">
+            Olá! Eu sou a <strong>Clima IA</strong>. 😊<br>
+            Podes perguntar sobre aquecimento global, desmatamento, poluição, energias renováveis e muito mais!
+          </div>
+        </div>
+      </div>
+
+      <div class="suggestions" id="suggestions">
+        <button type="button" class="suggestion">O que é aquecimento global?</button>
+        <button type="button" class="suggestion">Como posso ajudar o planeta?</button>
+        <button type="button" class="suggestion">O que são energias renováveis?</button>
+      </div>
+
+      <form class="composer" id="chatForm">
+        <label class="sr-only" for="userInput">Escreve a tua pergunta</label>
+        <input id="userInput" type="text" placeholder="Escreve a tua pergunta..." autocomplete="off" maxlength="500" required>
+        <button class="send-button" type="submit" aria-label="Enviar mensagem">➤</button>
+      </form>
+      <p class="disclaimer">A Clima IA é um projeto educativo e responde com informações gerais.</p>
+    </section>
+
+    <footer>Feito com 🌱 para um futuro mais sustentável.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
